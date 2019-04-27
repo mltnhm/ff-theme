@@ -1,11 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-:root {
-  --ui-accent: rgb(255, 72, 77);
-}
-
 #nav-bar {
-  padding-left: 80px;
+  padding-right: 140px;
 }
 
 #TabsToolbar {
@@ -17,4 +13,11 @@
   position: fixed;
   visibility: visible;
   margin-top: 5px;
+  right: 0;
+  z-index: 1;
+  color: #fff;
+}
+
+#titlebar {
+	visibility: collapse;
 }
