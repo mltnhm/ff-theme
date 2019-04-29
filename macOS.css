@@ -14,3 +14,8 @@
   visibility: visible;
   margin-top: 5px;
 }
+
+
+[sizemode="fullscreen"] #nav-bar {
+  padding-left: 0;
+}
