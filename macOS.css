@@ -16,6 +16,7 @@
 }
 
 
-[sizemode="fullscreen"] #nav-bar {
+[sizemode="fullscreen"] #nav-bar,
+window[chromehidden~="toolbar"] .chromeclass-toolbar-additional {
   padding-left: 0;
 }

@@ -12,9 +12,11 @@
 .titlebar-buttonbox-container {
   position: fixed;
   visibility: visible;
-  margin-top: 5px;
   right: 0;
   z-index: 1;
+}
+
+[lwtheme="true"] .titlebar-buttonbox-container {
   color: #fff;
 }
 
@@ -26,6 +28,7 @@
   margin-top: 8px;
 }
 
-[sizemode="fullscreen"] #nav-bar {
+[sizemode="fullscreen"] #nav-bar,
+window[chromehidden~="toolbar"] .chromeclass-toolbar-additional {
   padding-right: 0;
 }
