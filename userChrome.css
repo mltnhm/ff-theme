@@ -1,0 +1,55 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#TabsToolbar {
+  min-height:0;
+  visibility: collapse;
+}
+
+.titlebar-buttonbox-container {
+  position: fixed;
+  visibility: visible;
+}
+
+[sizemode="fullscreen"] #nav-bar,
+[chromehidden~="toolbar"] #nav-bar {
+  padding: 0;
+}
+
+@media (-moz-mac-yosemite-theme) {
+  #nav-bar {
+    padding-left: 80px;
+  }
+
+  [lwthemetextcolor="dark"] toolbar {
+    -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+  }
+
+  [lwthemetextcolor="bright"] toolbar {
+    -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+  }
+
+  .titlebar-buttonbox-container {
+    margin-top: 5px;
+  }
+}
+
+@media (-moz-windows-compositor) {
+  #nav-bar {
+    -moz-appearance: -moz-window-titlebar !important;
+    padding-right: 140px !important;
+  }
+
+  .titlebar-buttonbox-container {
+    right: 0;
+    z-index: 1;
+  }
+
+  [sizemode="maximized"] {
+    margin-top: 8px;
+  }
+
+  /* This is a thing but it makes the titlebar larger
+  [sizemode="maximized"] #nav-bar {
+    -moz-appearance: -moz-window-titlebar-maximized !important;
+  }*/
+}
