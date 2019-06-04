@@ -12,12 +12,12 @@
 
 [sizemode="fullscreen"] #nav-bar,
 [chromehidden~="toolbar"] #nav-bar {
-  padding: 0;
+  margin: 0;
 }
 
 @media (-moz-mac-yosemite-theme) {
   #nav-bar {
-    padding-left: 80px;
+    margin-left: 80px;
   }
 
   [lwthemetextcolor="dark"] toolbar {
@@ -36,7 +36,7 @@
 @media (-moz-windows-compositor) {
   #nav-bar {
     -moz-appearance: -moz-window-titlebar !important;
-    padding-right: 140px !important;
+    margin-right: 140px;
   }
 
   .titlebar-buttonbox-container {
@@ -46,6 +46,10 @@
 
   [sizemode="maximized"] {
     margin-top: 8px;
+  }
+
+  #titlebar {
+  	visibility: collapse;
   }
 
   /* This is a thing but it makes the titlebar larger
