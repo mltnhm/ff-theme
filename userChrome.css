@@ -20,11 +20,13 @@
     margin-left: 80px;
   }
 
-  [lwthemetextcolor="dark"] toolbar {
+  [lwthemetextcolor="dark"] toolbar, 
+  [lwthemetextcolor="dark"] #navigator-toolbox {
     -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
   }
 
-  [lwthemetextcolor="bright"] toolbar {
+  [lwthemetextcolor="bright"] toolbar,
+  [lwthemetextcolor="bright"] #navigator-toolbox {
     -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
   }
 
@@ -49,7 +51,7 @@
   }
 
   #titlebar {
-  	visibility: collapse;
+    visibility: collapse;
   }
 
   /* This is a thing but it makes the titlebar larger
